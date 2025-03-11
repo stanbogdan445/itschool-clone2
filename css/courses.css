@@ -1,0 +1,411 @@
+/* ADAUGAM VARIABILE */
+:root {
+  --text-primary: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+  --button-color: #2bb686;
+
+  --bg-primary: #141e4c;
+  --bg-secondary: #dfedf5;
+  --bg-dark: #101d42;
+  --bg-light: #ffffff;
+
+  --fs-large: 1rem;
+  --fs-medium: 0.875rem;
+  --fs-small: 0.75rem;
+  
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+  --mobile-logo-height: 45px;
+  }
+
+  /* RESETAM PROPRIETATILE DEFAULT */
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+  }
+
+  ul { 
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+  a {
+      display: block;
+      text-decoration: none;
+   }
+
+   /* ADAUGAM PROPRIETATI LEGATE DE FONT  */
+   body {
+      font-family: "Popins", sans-serif;
+   }
+
+   h1 {
+      font-size: 3.5rem;
+   }
+
+   h2 {
+      font-size: 1.75rem;
+
+   }
+
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   p {
+      font-size: var(--fs-medium);
+   }
+
+    /* ADAUGAM PROPRIETATI LEGATE DE CULORI */
+
+    h1 {
+      color: var(--text-light);
+    }
+
+    h2 {
+      color: var(--text-primary);
+    }
+
+    h3 {
+      color: var(--text-secondary);
+    }
+
+    p {
+      color: var(--text-dark);
+    }
+
+    /* STILIZAREA NAV-ULUI */
+    nav {
+      background-color: var(--bg-primary);
+      width: 100%;
+      z-index: 2;
+      top: 0;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: var(--spacing-medium);
+    }
+    
+
+    nav .logo-link {
+      padding: 0;
+    }
+    nav img {
+      width: auto;
+      height: 60px;
+    }
+
+
+    nav ul {
+      display: flex;
+    }
+
+    nav li {
+      /* NU UITAM SA PUNEM "position:relative" PE ELEMENTUL FATA DE CARE POZITIONAM ABSOLUT */
+      position: relative;
+    }
+
+    nav a {
+      font-size: var(--fs-small);
+      /* TRANSFORMAM TEXTUL SA CONTINA DOAR MAJUSCULE */
+      text-transform: uppercase;
+      color: var(--text-light);
+      padding: var(--spacing-medium);
+    }
+    
+    nav .arrow-down-icon {
+      font-size: var(--fs-large);
+      position: absolute;
+    }
+
+  .welcome {
+    background-color: var(--bg-primary);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav .menu-icon-container {
+      position: relative;
+  }
+   nav .menu-icon {
+    display: block;
+}
+}
+
+.courses .course {
+  width: 100%;
+  padding: var(--spacing-tiny);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses h2, .courses .main-paragraph {
+text-align: center;
+}
+
+.courses h2 {
+padding-top: var(--spacing-large);
+}
+
+.courses h3 {
+color: var(--text-primary);
+}
+
+
+h2 {
+display: block;
+margin-block-start: 0.83em;
+margin-block-end: 0.83em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+unicode-bidi: isolate;
+}
+
+.courses .container.grid .main-paragraph {
+margin-left: var(--spacing-small);
+margin-right: var(--spacing-small);
+}
+
+.courses .container.grid {
+padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.container {
+max-width: 1200px;
+min-width: 320px;
+margin: auto;
+padding: var(--spacing-medium);
+}
+
+div {
+display: block;
+unicode-bidi: isolate;
+}
+
+@media (max-width: 768px) {
+nav img {
+    height: var(--mobile-logo-height);
+}
+}
+
+/* ___________ .courses-container __________________ */
+
+.courses h2, .courses .main-paragraph, .courses .courses-container {
+margin-bottom: var(--spacing-large);
+}
+
+.courses .courses-container {
+display: flex
+;
+flex-wrap: wrap;
+}
+
+
+/* ___________ .courses-wrapper __________________ */
+
+.courses .course-wrapper {
+width: calc(100% / 3);
+padding-right: var(--spacing-small);
+padding-left: var(--spacing-small); 
+}
+
+/* ___________ Programare Python __________________ */
+
+body, h1, h2, h3, p {
+margin: 0;
+padding: 0;
+}
+
+h3 {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+unicode-bidi: isolate;
+}
+
+p {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+} 
+
+.courses h3, .courses .certification, .courses .details, .courses a {
+margin-bottom: var(--spacing-medium);
+}
+.courses span, .courses .certification {
+font-size: var(--fs-medium);
+color: #666;
+}
+
+/* ___________ Certificare __________________ */
+.courses .microsoft-logo, .courses .duration-months, .courses .duration-hours {
+margin-left: var(--spacing-small);
+}
+
+.courses .microsoft-logo {
+width: 80px;
+height: auto;
+vertical-align: middle;
+}
+
+img {
+overflow-clip-margin: content-box;
+overflow: clip;
+}
+
+/* ___________ Button Detalii __________________ */
+.courses a {
+font-size: var(--fs-medium);
+text-align: center;
+color: var(--text-white);
+background-color: var(--button-color);
+border: 1px solid var(--button-color);
+border-radius: 5px;
+padding: var(--spacing-tiny);
+width: 100px;
+}
+
+/* _______________ IMAGINI ______________ */
+
+.courses .presentation-image {
+width: 100%;
+height: auto;
+margin-bottom: var(--spacing-large);
+}
+
+/* _______________ FOOTER  ______________ */
+footer {
+background-color: var(--bg-dark);
+display: block;
+unicode-bidi: isolate;
+}
+
+footer p {
+font-size: var(--fs-small);
+text-align: center;
+color: var(--text-light);
+padding: var(--spacing-medium) 0;
+}
+
+/* ________________ MENU-ICON ______________ */
+
+nav .menu-icon {
+color: var(--text-light);
+}
+
+.material-symbols-outlined {
+font-family: 'Material Symbols Outlined';
+font-weight: normal;
+font-style: normal;
+font-size: 24px;
+line-height: 1;
+letter-spacing: normal;
+text-transform: none;
+display: inline-block;
+white-space: nowrap;
+word-wrap: normal;
+direction: ltr;
+-webkit-font-feature-settings: 'liga';
+-webkit-font-smoothing: antialiased;
+}
+
+nav input[type="checkbox"] {
+display: none;
+}
+
+input[type="checkbox" i] {
+background-color: initial;
+cursor: default;
+appearance: auto;
+box-sizing: border-box;
+margin: 3px 3px 3px 4px;
+padding: initial;
+border: initial;
+}
+
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+unicode-bidi: isolate;
+}
+
+
+
+/* ______________ MEDIA _____________ */
+
+/* @media (max-width: 992px) {
+.courses .course-wrapper {
+    width: 50%;
+}
+}
+
+@media (max-width: 768px) {
+nav .menu-icon-container {
+    position: relative;
+}
+}
+
+@media (max-width: 768px) {
+nav .menu-icon {
+    display: block;
+}
+}
+
+@media (max-width: 768px) {
+nav input[type="checkbox"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 768px) {
+nav input[type="checkbox"]:checked ~ ul {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: calc(var(--mobile-logo-height) + 2* var(--spacing-medium));
+    left: 0;
+    background-color: var(--bg-dark);
+}
+} */
